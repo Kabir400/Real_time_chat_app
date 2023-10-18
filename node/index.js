@@ -2,6 +2,7 @@ const http = require("http");
 const express = require("express");
 const path = require("path");
 const { Server } = require("socket.io");
+require("dotenv").config();
 
 const app = express();
 const server = http.createServer(app);
@@ -31,4 +32,4 @@ app.use(express.static(path.resolve(__dirname, "..", "public")));
 //   res.sendFile(path.resolve(__dirname, "..", "public", "index.html"));
 // });
 
-server.listen(8080);
+server.listen(process.env.port);
