@@ -1,0 +1,100 @@
+.nav-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 955px;
+  background-color: rgb(195, 195, 200);
+  border: 3px solid black;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.left {
+  align-self: flex-start;
+  background-color: #86df86;
+}
+.right {
+  align-self: flex-end;
+  background-color: white;
+}
+.message {
+  width: 24%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.send {
+  display: flex;
+  justify-content: center;
+}
+#send-container {
+  max-width: 955px;
+  width: 100%;
+}
+#messageInp {
+  width: 92%;
+  border: 2px solid black;
+  height: 34px;
+  border-radius: 6px;
+}
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+}
+body {
+  height: 100vh;
+  /* background-color: rgb(195, 195, 200); */
+}
+.middle {
+  align-self: center;
+  font-weight: 700;
+  color: #5a5a5a;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 782px) {
+  .message {
+    width: 37%;
+  }
+  #messageInp {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 599px) {
+  #messageInp {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 489px) {
+  .message {
+    width: 43%;
+  }
+  #messageInp {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #messageInp {
+    width: 82%;
+  }
+  .message {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 340px) {
+  #messageInp {
+    width: 78%;
+  }
+  #send-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
